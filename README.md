@@ -1,4 +1,4 @@
-# Next Clean Architecture TDD template
+# Next Clean Architecture TDD template (Redux/Toolkit)
 
 This is a template for a Next.js project with Clean Architecture and TDD setup.
 

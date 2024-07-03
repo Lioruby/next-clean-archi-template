@@ -1,4 +1,4 @@
-import React from "react";
+import { classNames } from "@root/modules/shared/react/libs/utils";
 
 export default function TextHighlightParser({
   text,
@@ -10,17 +10,20 @@ export default function TextHighlightParser({
   const textArray = text.split(" ");
 
   return (
-    <div className="flex flex-wrap items-center">
+    <>
       {textArray.map((char, index) => {
         return (
-          <span
-            key={index}
-            className={char.includes("<H>") ? highLightColor : ""}
-          >
-            {char.replaceAll("<H>", "")}{" "}
-          </span>
+          <>
+            <span
+              key={index}
+              className={classNames(char.includes("*") ? highLightColor : "")}
+            >
+              {char.replaceAll("*", "")}
+            </span>
+            <span> </span>
+          </>
         );
       })}
-    </div>
+    </>
   );
 }

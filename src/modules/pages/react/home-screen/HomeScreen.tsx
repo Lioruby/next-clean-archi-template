@@ -1,11 +1,11 @@
-import Header from "@root/modules/pages/react/components/Header";
-import Hero from "@root/modules/pages/react/components/Hero";
+import { useTranslation } from "@root/modules/shared/react/hooks/use-translation";
 
 export default function HomeScreen() {
+  const { t } = useTranslation("pages.home");
+
   return (
     <main>
-      <Header />
-      <Hero />
+      <h1>{t("title")}</h1>
     </main>
   );
 }

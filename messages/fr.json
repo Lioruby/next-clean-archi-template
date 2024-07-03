@@ -1,15 +1,7 @@
 {
-  "common": {
-    "login": "Login",
-    "try": "Try for free"
-  },
   "pages": {
-    "header": {
-      "features": "Features",
-      "pricing": "Pricing",
-      "faq": "FAQ",
-      "contact": "Contact"
-    },
-    "home": {}
+    "home": {
+      "title": "Accueil"
+    }
   }
 }

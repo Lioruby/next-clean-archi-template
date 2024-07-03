@@ -1,7 +1,9 @@
+import Header from "@root/modules/pages/react/components/Header";
+
 export default function HomeScreen() {
   return (
-    <>
-      <h1>Home</h1>
-    </>
+    <main>
+      <Header />
+    </main>
   );
 }

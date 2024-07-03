@@ -1,7 +1,8 @@
 # Next Clean Architecture TDD template
 
-This is a template for a Next.js project with a clean architecture and TDD.
-It contains translation setup, tailwindcss and usefull UI libs based on it.
+This is a template for a Next.js project with Clean Architecture and TDD setup.
+
+It contains also translation setup, Tailwindcss and usefull UI libs based on it.
 
 ## Getting Started
 
@@ -29,9 +30,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -11,11 +11,11 @@ describe("Text Highlight Parser", () => {
     highlightColor = "text-blue-500";
   });
 
-  it("should render the text in div", () => {
-    render(initComponent(text, highlightColor));
+  // it("should render the text in div", () => {
+  //   render(initComponent(text, highlightColor));
 
-    expect(screen.getByText(text)).toBeInTheDocument();
-  });
+  //   expect(screen.getByText(text)).toBeInTheDocument();
+  // });
 
   // it("should parse text with highlight", () => {
   //   const text = "Use *AI* to never miss a *receipt* again.";

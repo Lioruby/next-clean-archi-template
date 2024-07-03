@@ -1,8 +1,8 @@
 export default {
   collectCoverage: true,
   preset: "ts-jest",
-  testEnvironment: "node",
-  testRegex: "^((?!int|e2e).)*.test.ts$",
+  testEnvironment: "jsdom",
+  testRegex: "^((?!int|e2e).)*.test.tsx?$", // Inclure les fichiers .tsx
   coverageDirectory: "../coverage",
   coverageProvider: "v8",
   moduleFileExtensions: ["js", "json", "ts", "tsx"],
@@ -16,15 +16,8 @@ export default {
     ".*\\.factory\\.ts$",
   ],
   transform: {
-    "^.+\\.tsx?$": [
-      "ts-jest",
-      {
-        diagnostics: false,
-        isolatedModules: true,
-        jsx: "react",
-        target: "es2017",
-        allowJs: true,
-      },
-    ],
+    "^.+\\.tsx?$": "babel-jest",
   },
+  transformIgnorePatterns: ["/node_modules/(?!@testing-library/react)"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 };

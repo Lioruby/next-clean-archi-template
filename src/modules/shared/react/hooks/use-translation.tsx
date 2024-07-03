@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 
-export const useTranslation = (namespace: string) => {
-  const t = useTranslations(namespace);
+export const useTranslation = (namespace?: string) => {
+  const t = useTranslations(namespace ?? "");
 
   const locale = useLocale();
 

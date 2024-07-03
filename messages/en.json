@@ -10,6 +10,11 @@
       "faq": "FAQ",
       "contact": "Contact"
     },
-    "home": {}
+    "home": {
+      "hero": {
+        "title": "Use <H>AI to never miss a <H>receipt again.",
+        "description": "Connect your email and automatically sync received invoices. Analyze your expenses. Forward them directly to your accountant or sync with Qonto, Dougs or Shine.."
+      }
+    }
   }
 }

@@ -3,7 +3,11 @@ module.exports = {
   purge: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        black: "#00081A",
+      },
+    },
   },
   variants: {
     extend: {},

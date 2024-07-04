@@ -5,8 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 export const metadata = {
-  title: "Ratatouille",
-  description: "Réservation de tables de restaurant",
+  title: "Next Clean archi & TDD starter",
+  description: "Next Clean archi & TDD starter",
 };
 
 export default async function RootLayout({

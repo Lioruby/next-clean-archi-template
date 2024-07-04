@@ -12,11 +12,10 @@ const reducers = combineReducers({});
 
 export type AppStore = ReturnType<typeof createStore>;
 export type AppState = ReturnType<typeof reducers>;
-export type AppDispatch = AppStore["dispatch"];
+export type AppDispatch = ThunkDispatch<AppState, Dependencies, AnyAction>;
 export type AppGetState = AppStore["getState"];
-export type AppThunkDispatch = ThunkDispatch<AppState, Dependencies, AnyAction>;
 export type ThunkApi = {
-  dispatch: AppThunkDispatch;
+  dispatch: AppDispatch;
   state: AppState;
   extra: Dependencies;
 };
@@ -41,5 +40,4 @@ export const createStore = (config: {
   return store;
 };
 
-export const useAppDispatch = () =>
-  useDispatch<ThunkDispatch<AppState, Dependencies, AnyAction>>();
+export const useAppDispatch = () => useDispatch<AppDispatch>();

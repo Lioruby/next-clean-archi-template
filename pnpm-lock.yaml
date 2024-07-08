@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@amplitude/analytics-browser":
+        specifier: ^2.9.3
+        version: 2.9.3
       "@headlessui/react":
         specifier: ^2.0.4
         version: 2.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -157,6 +160,42 @@ packages:
         integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==,
       }
     engines: { node: ">=10" }
+
+  "@amplitude/analytics-browser@2.9.3":
+    resolution:
+      {
+        integrity: sha512-PnkJrJGRUfdE9nFgQZbWvUjNGnbcFojQROfj7KQeKGJTzQZXMt+xafmfXWDnhsf0JRgbk273Wh7Z6WNXxS1seA==,
+      }
+
+  "@amplitude/analytics-client-common@2.2.4":
+    resolution:
+      {
+        integrity: sha512-+zOW3/Yb4LzK1DfhFCnSOcb8vgeZgIQffLM6yrgzKGedtQOnwDQeKTDI3aaMzckXQPVcJs1M6bJcT/l5TmAkDw==,
+      }
+
+  "@amplitude/analytics-connector@1.5.0":
+    resolution:
+      {
+        integrity: sha512-T8mOYzB9RRxckzhL0NTHwdge9xuFxXEOplC8B1Y3UX3NHa3BLh7DlBUZlCOwQgMc2nxDfnSweDL5S3bhC+W90g==,
+      }
+
+  "@amplitude/analytics-core@2.3.0":
+    resolution:
+      {
+        integrity: sha512-Knafvocs29cPOHM3GHyBkP4nXUrh/oXnj2fULoSyh/03Bt63UPoyQCNS/EtQB/dOUhapTP35ZU9yZnrY+jvndQ==,
+      }
+
+  "@amplitude/analytics-types@2.6.0":
+    resolution:
+      {
+        integrity: sha512-7MSENvLCTGjec7K45JT+RcOuoPTCvq1MMq/HRLiQK/BMR4taX7f/uXldEc8b//o+ZZP45IBqFroR7Bl8LwJQrQ==,
+      }
+
+  "@amplitude/plugin-page-view-tracking-browser@2.2.17":
+    resolution:
+      {
+        integrity: sha512-s19LUuPMvOhvM/36XOUeVSMGOhtSOPA6bhhrR4x/lEsyylsS+rfi6/fILd2B5gojplXKMvVlJXEP+t1fjIr1HA==,
+      }
 
   "@ampproject/remapping@2.3.0":
     resolution:
@@ -6642,6 +6681,36 @@ snapshots:
   "@adobe/css-tools@4.4.0": {}
 
   "@alloc/quick-lru@5.2.0": {}
+
+  "@amplitude/analytics-browser@2.9.3":
+    dependencies:
+      "@amplitude/analytics-client-common": 2.2.4
+      "@amplitude/analytics-core": 2.3.0
+      "@amplitude/analytics-types": 2.6.0
+      "@amplitude/plugin-page-view-tracking-browser": 2.2.17
+      tslib: 2.6.2
+
+  "@amplitude/analytics-client-common@2.2.4":
+    dependencies:
+      "@amplitude/analytics-connector": 1.5.0
+      "@amplitude/analytics-core": 2.3.0
+      "@amplitude/analytics-types": 2.6.0
+      tslib: 2.6.2
+
+  "@amplitude/analytics-connector@1.5.0": {}
+
+  "@amplitude/analytics-core@2.3.0":
+    dependencies:
+      "@amplitude/analytics-types": 2.6.0
+      tslib: 2.6.2
+
+  "@amplitude/analytics-types@2.6.0": {}
+
+  "@amplitude/plugin-page-view-tracking-browser@2.2.17":
+    dependencies:
+      "@amplitude/analytics-client-common": 2.2.4
+      "@amplitude/analytics-types": 2.6.0
+      tslib: 2.6.2
 
   "@ampproject/remapping@2.3.0":
     dependencies:

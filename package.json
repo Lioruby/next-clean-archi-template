@@ -15,6 +15,7 @@
     "hook:prepush": "pnpm jest"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.9.3",
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^2.1.3",
     "@radix-ui/react-checkbox": "^1.0.4",

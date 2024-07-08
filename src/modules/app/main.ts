@@ -1,3 +1,4 @@
+import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
 import { Dependencies } from "@root/modules/store/dependencies";
 import { AppStore, createStore } from "@root/modules/store/store";
 
@@ -12,10 +13,7 @@ export class App {
 
   setupDependencies(): Dependencies {
     return {
-      /* GATEWAYS */
-      // userGateway: new InMemoryUserGateway(),
-      /* SERVICES */
-      // userValidationService: new userValidationService(),
+      analyticsGateway: new InMemoryAnalyticsGateway(),
     };
   }
 }

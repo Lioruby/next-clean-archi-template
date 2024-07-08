@@ -1,5 +1,6 @@
 import { AppState, createStore } from "@root/modules/store/store";
 import { Dependencies } from "@root/modules/store/dependencies";
+import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
 
 /**
  * Create testing dependencies with provided defaults
@@ -9,6 +10,7 @@ import { Dependencies } from "@root/modules/store/dependencies";
 const createDependencies = (
   dependencies?: Partial<Dependencies>
 ): Dependencies => ({
+  analyticsGateway: new InMemoryAnalyticsGateway(),
   ...dependencies,
 });
 

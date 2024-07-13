@@ -2,7 +2,7 @@
 
 This is a template for a Next.js project with Clean Architecture and TDD setup.
 
-It contains also translation setup, Tailwindcss and usefull UI libs based on it.
+It contains also translation setup, Tailwindcss, usefull UI libs based on it and Analytics Gateway with the initial Amplitude implementation.
 
 ## Getting Started
 

@@ -1,7 +1,8 @@
 {
   "pages": {
     "home": {
-      "title": "Accueil"
+      "title": "Bienvenue dans le *template* *Clean Architecture* de Lioruby avec *NextJS* !",
+      "description": "Happy Coding ! 😌"
     }
   }
 }

@@ -3,8 +3,9 @@ import { IAnalyticsGateway } from "@root/modules/analytics/gateways/analytics-ga
 
 export class AmplitudeAnalyticsGateway implements IAnalyticsGateway {
   constructor() {
-    const PUBLIC_AMPLITUDE_KEY = "YOUR_PUBLIC_AMPLITUDE_KEY";
-    amplitude.init(PUBLIC_AMPLITUDE_KEY, {
+    const publicApiKey = process.env.PUBLIC_AMPLITUDE_KEY ?? "";
+
+    amplitude.init(publicApiKey, {
       defaultTracking: true,
     });
   }

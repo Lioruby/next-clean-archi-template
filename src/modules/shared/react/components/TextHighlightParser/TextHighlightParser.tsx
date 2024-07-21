@@ -1,4 +1,4 @@
-import { classNames } from "@root/modules/shared/react/libs/utils";
+import { cn } from "@root/modules/shared/react/libs/cn";
 import { Fragment } from "react";
 
 export default function TextHighlightParser({
@@ -15,9 +15,7 @@ export default function TextHighlightParser({
       {textArray.map((char, index) => {
         return (
           <Fragment key={index}>
-            <span
-              className={classNames(char.includes("*") ? highLightColor : "")}
-            >
+            <span className={cn(char.includes("*") ? highLightColor : "")}>
               {char.replaceAll("*", "")}
             </span>
             <span> </span>

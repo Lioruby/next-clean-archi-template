@@ -1,5 +1,5 @@
 import ActivityIndicator from "@root/modules/shared/react/components/ui/ActivityIndicator";
-import { cn } from "@root/modules/shared/react/libs/utils";
+import { cn } from "@root/modules/shared/react/libs/cn";
 import { ChevronRight } from "lucide-react";
 
 export default function Button({

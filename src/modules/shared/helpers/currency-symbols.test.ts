@@ -1,4 +1,4 @@
-import { getCurrencySymbol } from "@root/modules/shared/utils/currency-symbols";
+import { getCurrencySymbol } from "@root/modules/shared/helpers/currency-symbols";
 
 describe("Get currency symbols", () => {
   describe("Happy Path", () => {

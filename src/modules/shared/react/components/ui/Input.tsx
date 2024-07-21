@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
-import { cn } from "@root/modules/shared/react/libs/utils";
+import { cn } from "@root/modules/shared/react/libs/cn";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}

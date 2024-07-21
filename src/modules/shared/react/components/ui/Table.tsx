@@ -1,4 +1,4 @@
-import { cn } from "@root/modules/shared/react/libs/utils";
+import { cn } from "@root/modules/shared/react/libs/cn";
 import * as React from "react";
 
 const Table = React.forwardRef<

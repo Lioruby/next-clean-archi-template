@@ -1,4 +1,4 @@
-import { cn } from "@root/modules/shared/react/libs/utils";
+import { cn } from "@root/modules/shared/react/libs/cn";
 
 export const LabelInputContainer = ({
   children,

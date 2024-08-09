@@ -1,6 +1,7 @@
 import { AppState, createStore } from "@root/modules/store/store";
 import { Dependencies } from "@root/modules/store/dependencies";
 import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
+import { StubStorageProvider } from "@root/modules/core/providers-impl/stub-storage.provider";
 
 /**
  * Create testing dependencies with provided defaults
@@ -11,6 +12,7 @@ const createDependencies = (
   dependencies?: Partial<Dependencies>
 ): Dependencies => ({
   analyticsGateway: new InMemoryAnalyticsGateway(),
+  storageProvider: new StubStorageProvider(),
   ...dependencies,
 });
 

@@ -1,4 +1,5 @@
 import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
+import { LocalStorageProvider } from "@root/modules/core/providers-impl/local-storage.provider";
 import { Dependencies } from "@root/modules/store/dependencies";
 import { AppStore, createStore } from "@root/modules/store/store";
 
@@ -14,6 +15,7 @@ export class App {
   setupDependencies(): Dependencies {
     return {
       analyticsGateway: new InMemoryAnalyticsGateway(),
+      storageProvider: new LocalStorageProvider(),
     };
   }
 }

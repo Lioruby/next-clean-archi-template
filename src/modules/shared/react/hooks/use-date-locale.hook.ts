@@ -1,4 +1,4 @@
-import { useTranslation } from "@root/modules/shared/react/hooks/use-translation";
+import { useTranslation } from "@root/modules/shared/react/hooks/use-translation.hook";
 import dayjs from "dayjs";
 import "dayjs/locale/en";
 import "dayjs/locale/fr";

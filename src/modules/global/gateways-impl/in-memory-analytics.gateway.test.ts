@@ -1,4 +1,4 @@
-import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
+import { InMemoryAnalyticsGateway } from "@root/modules/global/gateways-impl/in-memory-analytics.gateway";
 
 describe("In memory analytics gateway", () => {
   it("Should be defined", () => {

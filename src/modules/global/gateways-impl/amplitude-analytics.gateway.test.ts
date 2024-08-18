@@ -1,5 +1,5 @@
-import { AmplitudeAnalyticsGateway } from "@root/modules/analytics/gateways-impl/amplitude.analytics-gateway";
 import * as amplitude from "@amplitude/analytics-browser";
+import { AmplitudeAnalyticsGateway } from "@root/modules/global/gateways-impl/amplitude-analytics.gateway";
 
 describe("Amplitude analytics gateway", () => {
   it("Should be defined", () => {

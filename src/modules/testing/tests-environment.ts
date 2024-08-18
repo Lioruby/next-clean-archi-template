@@ -1,7 +1,8 @@
-import { AppState, createStore } from "@root/modules/store/store";
+import { createStore } from "@root/modules/store/store";
 import { Dependencies } from "@root/modules/store/dependencies";
-import { InMemoryAnalyticsGateway } from "@root/modules/analytics/gateways-impl/in-memory.analytics-gateway";
-import { StubStorageProvider } from "@root/modules/core/providers-impl/stub-storage.provider";
+import { StubStorageProvider } from "@root/modules/global/core/testing/stub-storage.provider";
+import { InMemoryAnalyticsGateway } from "@root/modules/global/gateways-impl/in-memory-analytics.gateway";
+import { AppState } from "@root/modules/store/app-state";
 
 /**
  * Create testing dependencies with provided defaults

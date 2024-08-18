@@ -1,4 +1,4 @@
-import { IAnalyticsGateway } from "@root/modules/analytics/gateways/analytics-gateway";
+import { IAnalyticsGateway } from "@root/modules/global/core/gateways/analytics.gateway";
 
 export class InMemoryAnalyticsGateway implements IAnalyticsGateway {
   track(event: string, properties?: Record<string, any>): void {

@@ -1,4 +1,4 @@
-import { IStorageProvider } from "@root/modules/core/providers/storage.provider";
+import { IStorageProvider } from "@root/modules/global/core/providers/storage.provider";
 
 export class LocalStorageProvider implements IStorageProvider {
   setItem(key: string, value: string): Promise<void> {
@@ -6,8 +6,9 @@ export class LocalStorageProvider implements IStorageProvider {
     return Promise.resolve();
   }
 
-  getItem(key: string): Promise<string | null> {
-    return Promise.resolve(localStorage.getItem(key));
+  getItem(key: string): Promise<Record<string, unknown> | null> {
+    const result = localStorage.getItem(key);
+    return Promise.resolve(result ? JSON.parse(result) : null);
   }
 
   removeItem(key: string): Promise<void> {

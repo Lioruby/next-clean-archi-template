@@ -1,4 +1,4 @@
-import HomeScreen from "@root/modules/pages/react/home-screen/HomeScreen";
+import HomeScreen from "@root/modules/global/react/HomeScreen";
 
 const RootPage = () => {
   return <HomeScreen />;

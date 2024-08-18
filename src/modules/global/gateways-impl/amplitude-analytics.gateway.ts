@@ -1,5 +1,5 @@
 import * as amplitude from "@amplitude/analytics-browser";
-import { IAnalyticsGateway } from "@root/modules/analytics/gateways/analytics-gateway";
+import { IAnalyticsGateway } from "@root/modules/global/core/gateways/analytics.gateway";
 
 export class AmplitudeAnalyticsGateway implements IAnalyticsGateway {
   constructor() {

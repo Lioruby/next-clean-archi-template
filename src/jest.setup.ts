@@ -19,7 +19,7 @@ jest.mock("@root/assets/images", () => ({
   },
 }));
 
-jest.mock("@root/modules/shared/react/hooks/use-translation", () => ({
+jest.mock("@root/modules/shared/react/hooks/use-translation.hook", () => ({
   useTranslation: () => ({
     t: (key: string) => key,
     locale: "en",

@@ -2,7 +2,7 @@ import { Input } from "@root/modules/shared/react/components/ui/Input";
 import { Label } from "@root/modules/shared/react/components/ui/Label";
 import { LabelInputContainer } from "@root/modules/shared/react/components/ui/LabelInputContainer";
 import { CircleAlert } from "lucide-react";
-import { useTranslation } from "@root/modules/shared/react/hooks/use-translation";
+import { useTranslation } from "@root/modules/shared/react/hooks/use-translation.hook";
 
 type InputWithLabelProps = {
   id: string;

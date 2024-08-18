@@ -1,5 +1,5 @@
 import TextHighlightParser from "@root/modules/shared/react/components/TextHighlightParser/TextHighlightParser";
-import { useTranslation } from "@root/modules/shared/react/hooks/use-translation";
+import { useTranslation } from "@root/modules/shared/react/hooks/use-translation.hook";
 
 export default function HomeScreen() {
   const { t } = useTranslation("pages.home");

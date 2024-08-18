@@ -1,4 +1,4 @@
-import { getCurrencySymbol } from "@root/modules/shared/helpers/currency-symbols";
+import { getCurrencySymbol } from "@root/modules/shared/helpers/currency-symbols.helper";
 
 describe("Get currency symbols", () => {
   beforeEach(() => {

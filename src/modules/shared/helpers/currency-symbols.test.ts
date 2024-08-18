@@ -1,6 +1,10 @@
 import { getCurrencySymbol } from "@root/modules/shared/helpers/currency-symbols";
 
 describe("Get currency symbols", () => {
+  beforeEach(() => {
+    jest.spyOn(console, "warn").mockImplementation();
+  });
+
   describe("Happy Path", () => {
     it("should return the correct currency symbol", () => {
       expect(getCurrencySymbol("EUR")).toBe("€");

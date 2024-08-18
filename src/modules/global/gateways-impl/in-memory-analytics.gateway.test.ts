@@ -6,9 +6,9 @@ describe("In memory analytics gateway", () => {
     expect(analytics).toBeDefined();
   });
 
-  it("Should console warn when a event is tracked", () => {
+  it("Should inform developper when a event is tracked", () => {
     const analytics = new InMemoryAnalyticsGateway();
-    jest.spyOn(console, "info");
+    jest.spyOn(console, "info").mockImplementation();
     const properties = { test: "test" };
     analytics.track("test-event", properties);
     expect(console.info).toHaveBeenCalledWith(
